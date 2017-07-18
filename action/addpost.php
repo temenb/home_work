@@ -29,10 +29,6 @@ class ActionAddPost extends ActionAbstract
                 $this->messages['errors'][] = 'Discription shouldn\'t be empty';
                 $validaton = false;
             }
-            if(UserRoot::user_role){
-                
-                $this->messages['errors'][] = 'you don`t have root';
-            }
 
 
             $link = DbConnect::getInstance()->getLink();

@@ -32,10 +32,7 @@ class ActionLogin extends ActionAbstract {
                     $row += array('salt' => '', 'password' => '');
                     if (md5($password . $row['salt']) == $row['password']) {
                         
-                        $_SESSION['user']['id'] = $row['id'];
                         
-                        header('Location: ' . $_SERVER['REQUEST_SCHEME'] . '://' . $_SERVER['SERVER_NAME'] . '?r=showpost');
-                        exit;
                     } else {
                         $this->messages['errors'][] = 'authorization failed';
                     }
