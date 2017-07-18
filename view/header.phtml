@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title><?php echo $this->title ?></title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <?php if (!empty($this->messages['errors']) && is_array($this->messages['errors'])): ?>
+            <?php foreach ($this->messages['errors'] as $text): ?>
+                <?php echo htmlspecialchars($text) ?><br />
+            <?php endforeach ?>
+        <?php endif ?>
+
+        <?php if (!empty($this->messages['success']) && is_array($this->messages['success'])): ?>
+            <?php foreach ($this->messages['success'] as $text): ?>
+                <?php echo htmlspecialchars($text) ?><br />
+            <?php endforeach ?>
+        <?php endif ?>
+                
+
+            
+        

@@ -1,13 +1,13 @@
 <?php
 
-class UserRoot {
+class AccessChecker {
     
 
 
-    public function getRoleName(){
+    public function isAllowed($userId){
         
         $link = DbConnect::getInstance()->getLink();
-            if ($stmt = mysqli_prepare($link, "select * from user where root_name= ?")) {
+            if ($stmt = mysqli_prepare($link, "select * from user where id= ?")) {
 
                 /* связываем параметры с метками */
                 mysqli_stmt_bind_param($stmt, "s", $root_name);
@@ -23,20 +23,12 @@ class UserRoot {
                 /* закрываем запрос */
                 mysqli_stmt_close($stmt);
                 
-                if($root){
-                    
-                }  else {
-                    //header('Location: http://localhost/index.php?r=login');
-                    $this->messages['errors'][] = 'not root';
-                    exit();
-                }
+                
      }
-     return $this->root_name;
-    
+     
   }
 }
 
-$user_role = new UserRoot();
-print_r($user_role->getRoleName());
+return isset($root['is_admin']) && ($root['is_admin'] == 'admin');
 
 

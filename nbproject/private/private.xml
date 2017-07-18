@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/var/www/html/action/abstract.php</file>
+            <file>file:/var/www/html/index.php</file>
+            <file>file:/var/www/html/action/login.php</file>
+            <file>file:/var/www/html/lib/app.php</file>
+            <file>file:/var/www/html/view/addpost.phtml</file>
+            <file>file:/var/www/html/action/iaction.php</file>
+            <file>file:/var/www/html/action/registration.php</file>
+            <file>file:/var/www/html/view/login.phtml</file>
+            <file>file:/var/www/html/view/header.phtml</file>
+            <file>file:/var/www/html/view/showpost.phtml</file>
+            <file>file:/var/www/html/style.css</file>
+            <file>file:/var/www/html/action/addpost.php</file>
+            <file>file:/var/www/html/lib/view.php</file>
+            <file>file:/var/www/html/config/router.php</file>
+            <file>file:/var/www/html/action/showpost.php</file>
+            <file>file:/var/www/html/view/registration.phtml</file>
+            <file>file:/var/www/html/db/connect.php</file>
+            <file>file:/var/www/html/lib/router.php</file>
+        </group>
+    </open-files>
+</project-private>

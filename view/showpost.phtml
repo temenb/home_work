@@ -1,0 +1,17 @@
+<table>
+    <tr><td>id</td><td>title</td><td>discription</td></tr>
+    <?php foreach ($this->post as $post): ?>
+    
+<tr>
+<td><?php echo htmlspecialchars($post['id'])?></td>
+<td><?php echo htmlspecialchars($post['title'])?></td>
+<td><?php echo htmlspecialchars($post['discription'])?></td>
+</tr>
+<?php endforeach;?>
+</table>
+<br />
+<a href="?r=registration">Regisration</a>
+    <a href="?r=login">Login</a>
+    <a href="?r=addpost">AddPost</a>
+    
+
