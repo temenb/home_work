@@ -11,6 +11,8 @@ class ActionShowPost extends ActionAbstract
 
     public function run()
     {
+        var_dump(AccessChecker::isAllowed($_SESSION['user']['id']));
+        exit;
         $query = "SELECT `id`, `title`, `discription` FROM `posts`";
         
             $link = DbConnect::getInstance()->getLink();

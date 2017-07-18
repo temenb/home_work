@@ -1,6 +1,7 @@
 <?php
 
 require_once 'action/iaction.php';
+require_once 'lib/accesschecker.php';
 
 class Application {
 
